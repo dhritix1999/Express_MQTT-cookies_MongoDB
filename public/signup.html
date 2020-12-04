@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>Login Here</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+        .form-login{
+            width:80%; 
+            margin-right: auto; 
+            margin-left: auto; 
+            display: table;
+            border: 2px solid rgb(185, 185, 185)
+        }
+        
+    </style>
+    
+    
+     <!-- Cookie Consent by https://www.FreePrivacyPolicy.com -->
+<script type="text/javascript" src="//www.freeprivacypolicy.com/public/cookie-consent/3.1.0/cookie-consent.js"></script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', function () {
+cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palette":"light","language":"en"});
+});
+</script>
+
+<noscript>Cookie Consent by <a href="https://www.FreePrivacyPolicy.com/free-cookie-consent/" rel="nofollow noopener">FreePrivacyPolicy.com</a></noscript>
+<!-- End Cookie Consent -->
+
+    </head>
+    <body class="container">
+        <div class="page-header">
+            <h1 style="text-align: center;">Welcome to the Moto Navigation</h1>
+        </div>
+
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/home">Home</a></li>
+                        <li><a href="/maps">Map</a></li>
+                        <li><a href="/arrow">Moto Device</a></li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="/signup">Sign Up</a></li>
+                        <li><a href="/login">Log In</a></li>
+                        <li><a href="/logout">Log Out</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+
+        <div class="container row form-login">
+           <!-- Material form login -->
+            <form autocomplete="off" action="/signup" method="post">
+                <h2 style="text-align: center;">Sign Up</h2>
+                <div class="form-group">
+                    <label>Username:</label>
+                    <input type="text" class="form-control" id="username"  name="username" placeholder="Enter name" required>
+                  </div>
+                <div class="form-group">
+                  <label>Email address:</label>
+                  <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email" required>
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label>Password:</label>
+                  <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+        </div>
+    </body>
+</html>

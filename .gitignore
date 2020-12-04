@@ -1,0 +1,35 @@
+<<<<<<< HEAD
+# Also see: https://www.pluralsight.com/guides/how-to-use-gitignore-file
+
+# Run this after changing .gitignore 
+
+#git rm -r --cached . 
+#git add .
+#git commit -m 'Removed all files that are in the .gitignore' 
+#git push origin master
+
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# For mac
+.DS_Store
+
+# all node modules
+node_modules/
+
+# specific directories
+TF/node_modules/
+
+# Optional npm cache directory
+.npm
+
+# dotenv environment variables file
+.env
+
+=======
+/TF/node_modules
+>>>>>>> 90cf90bc9155f56ab2f34c6b088ba9c4ad78b8fc
